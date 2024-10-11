@@ -7,6 +7,11 @@ spring:
     name: search-service
   main:
     banner-mode: off
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9082/realms/fannos
 eureka:
   client:
     service-url:
